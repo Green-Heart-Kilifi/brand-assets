@@ -1,0 +1,51 @@
+/* Green Heart Kilifi — brand colours as custom properties.
+ *
+ * Source of truth: "GHK Brand Colours updated.pdf" (Aug 2026) in the
+ * GH X FREEHAND FULL KIT. Hex values below are transcribed from that
+ * document; Pantone references are kept so print and screen can be checked
+ * against each other.
+ *
+ * The guidelines give flat colours, not a UI ramp. --gh-teal-50..900 is a
+ * scale built between the two primaries for hovers, borders and tints; it is
+ * ours, not the brand document's, and can be adjusted. The nine named colours
+ * cannot.
+ */
+
+:root {
+  /* --- Primary ------------------------------------------------------- */
+  --gh-dark:   #1C312C;  /* Pantone 5535 C */
+  --gh-teal:   #267F70;  /* Pantone 327 C  */
+
+  /* --- Secondary ----------------------------------------------------- */
+  --gh-cream:  #FCF2D7;  /* Pantone 7499 C */
+
+  /* --- Tertiary ------------------------------------------------------ */
+  --gh-sun:    #F7CD45;  /* Pantone 122 C  */
+  --gh-lime:   #CDF546;  /* Pantone 374 C  */
+  --gh-char:   #383932;  /* Pantone 447 C  */
+
+  /* --- Expanded ------------------------------------------------------
+   * Spend these on state, not decoration. On the nursery site they carry
+   * conservation risk, sourcing, and secure-native respectively. */
+  --gh-red:    #D04E38;  /* Matunda red — Pantone 7580 C */
+  --gh-sky:    #6392E0;  /* Kilifi Sky  — Pantone 2727 C */
+  --gh-clay:   #E1B69B;  /* Coral pink  — Pantone 4685 C */
+
+  /* --- Working ramp (ours, derived) ----------------------------------- */
+  --gh-teal-50:  #EEF6F3;
+  --gh-teal-100: #D6E9E4;
+  --gh-teal-200: #AFD4CB;
+  --gh-teal-300: #7FBCAF;
+  --gh-teal-400: #4E9F8E;
+  --gh-teal-500: #267F70;  /* = --gh-teal */
+  --gh-teal-600: #216B5F;
+  --gh-teal-700: #1C584E;
+  --gh-teal-800: #1C312C;  /* = --gh-dark */
+  --gh-teal-900: #142420;
+
+  --gh-sand:     #F3E7C4;  /* cream, one step down, for panels on cream */
+
+  /* --- Type ----------------------------------------------------------- */
+  --gh-font-display: "Gazpacho", Georgia, serif;
+  --gh-font-body:    "Cabinet Grotesk", system-ui, -apple-system, sans-serif;
+}
